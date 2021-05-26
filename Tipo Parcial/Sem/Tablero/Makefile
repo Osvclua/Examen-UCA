@@ -1,6 +1,6 @@
 CXXFLAGS= -std=c++17
 
-todos= carro inicializa termina
+todos= supervisor modificador inicializa termina
 
 all:$(todos)
 
