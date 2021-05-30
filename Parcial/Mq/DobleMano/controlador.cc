@@ -16,8 +16,9 @@ void entran(int &esp1, int &act1, int &act2, string dir)
         int n = esp1;
         for (int i = 0; i < n; i++)
         {
-            cout <<"Enviado "<< siga<<endl;
-            esp1--;act1++;
+            cout << "Enviado " << siga << endl;
+            esp1--;
+            act1++;
             direccion.send(siga);
         }
     }
@@ -43,11 +44,11 @@ int main()
             w2eEsp++;
         if (cdo == "W2ESa")
             w2eAct--;
-        estado(e2wEsp,e2wAct,w2eEsp,w2eAct);
+        estado(e2wEsp, e2wAct, w2eEsp, w2eAct);
         entran(e2wEsp, e2wAct, w2eAct, "e2w");
         entran(w2eEsp, w2eAct, e2wAct, "w2e");
-        cout<<"Despues de operar"<<endl;
-        estado(e2wEsp,e2wAct,w2eEsp,w2eAct);
+        cout << "Despues de operar" << endl;
+        estado(e2wEsp, e2wAct, w2eEsp, w2eAct);
         delete (pedi);
         pedi = pedidos.receive();
         cout << "Recibido " << *pedi;
