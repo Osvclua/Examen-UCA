@@ -5,12 +5,10 @@ using namespace std;
 // termina
 
 int main(int argc, char * argv[]){
-	sv_sem semEW("SemEW");
-	cout<<"Borrando "<<semEW<<endl;
-	semEW.del();
-	sv_sem semWE("SemWE");
-	cout<<"Borrando "<<semWE<<endl;
-	semWE.del();
+	sv_sem semPuente("SemPuente");
+	cout<<"Borrando "<<semPuente<<endl;
+	semPuente.del();
+	 
 	elSwitch swEW("SwEW");
 	cout<<"Borrando "<<swEW<<endl;
 	swEW.del();

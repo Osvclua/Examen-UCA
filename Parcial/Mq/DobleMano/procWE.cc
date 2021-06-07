@@ -4,12 +4,12 @@ using namespace std;
 
 int main(){
     sv_mq pedidos("pedidos");
-    sv_mq e2w("w2e");
+    sv_mq w2e("w2e");
     string nom="W2E-"+to_string(getpid()),res;
     cout<<nom<<" comienza."<<endl;
     mpdu pedi("W2ELl",nom),*rta;
     pedidos.send(pedi);
-    rta=e2w.receive();
+    rta=w2e.receive();
     delete (rta);
     cout<<nom<<" en camino W-->E..."<<endl;
     cin>>res;

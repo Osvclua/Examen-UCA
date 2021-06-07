@@ -32,7 +32,7 @@ int main()
     mpdu *pedi;
     int e2wEsp = 0, e2wAct = 0, w2eEsp = 0, w2eAct = 0;
     pedi = pedidos.receive();
-    cout << "Recibido " << *pedi;
+    cout << "Recibido " << *pedi<<endl;
     string cdo = pedi->getHdr();
     while (cdo != "FIN")
     {
