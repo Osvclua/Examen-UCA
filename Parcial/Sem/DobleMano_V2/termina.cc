@@ -5,14 +5,14 @@ using namespace std;
 // termina
 
 int main(int argc, char * argv[]){
-	sv_sem semPuente("SemPuente");
-	cout<<"Borrando "<<semPuente<<endl;
-	semPuente.del();
+	sv_sem semWE("SemWE");
+	cout<<"Borrando "<<semWE<<endl;
+	semWE.del();
 	 
-	elSwitch swEW("SwEW");
-	cout<<"Borrando "<<swEW<<endl;
-	swEW.del();
-	elSwitch swWE("SwWE");
-	cout<<"Borrando "<<swWE<<endl;
-	swWE.del();
+	elSwitch sw("Sw");
+	cout<<"Borrando "<<sw<<endl;
+	sw.del();
+	sv_sem semEW("SemEW");
+	cout<<"Borrando "<<semEW<<endl;
+	semEW.del();
 	}

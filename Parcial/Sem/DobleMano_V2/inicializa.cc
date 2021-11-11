@@ -5,10 +5,9 @@ using namespace std;
 // inicializa
 
 int main(int argc, char * argv[]){
-	sv_sem semPuente("SemPuente",1);
-	cout<<"Creado "<<semPuente<<endl;	
-	elSwitch swEW("SwEW");
-	cout<<"Creado "<<swEW<<endl;
-	elSwitch swWE("SwWE");
-	cout<<"Creado "<<swWE<<endl;
+	sv_sem semEW("SemEW",1);
+	sv_sem semWE("SemWE",1);
+	elSwitch sw("Sw");
+	cout<<"Creado "<<sw<<endl<<semEW<<endl<<semWE<<endl;
+	
 }

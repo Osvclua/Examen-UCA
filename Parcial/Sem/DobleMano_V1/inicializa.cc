@@ -11,4 +11,5 @@ int main(int argc, char * argv[]){
 	cout<<"Creado "<<swEW<<endl;
 	elSwitch swWE("SwWE");
 	cout<<"Creado "<<swWE<<endl;
+	
 }
