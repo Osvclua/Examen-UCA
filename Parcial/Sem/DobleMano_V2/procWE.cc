@@ -3,6 +3,10 @@
 #include <cstdlib>
 using namespace std;
 // proceso que va en sentido WE
+//
+//    No fuciona. correr con elSwitchDebug.h
+//
+
 
 int main(int argc, char * argv[]){
   string rta;
